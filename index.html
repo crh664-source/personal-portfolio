@@ -2,42 +2,71 @@
 <html>
 <head>
 <title>Student Portfolio</title>
+<link rel="stylesheet" href="./style.css"/>
 </head>
- 
+
 <body>
- 
+ <div class="layout">
+  <header class="site-header">
     <h1>My Personal Portfolio</h1>
- 
-    <hr>
- 
+    </header>
+
+    <nav class="sidebar">
+    <ul class="nav-list">
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact information</a></li>
+    </ul>
+    <a href="https://docs.google.com/document/d/1pneWWlOjez3QlMS4Km4ndB7Rn-Z2_in6vsCKbBBqWdU/edit?tab=t.0" target="_blank" rel="noopener" class="resume-btn">View Resume</a>
+    </nav>
+
+  <main class="content">
+
+    <section id="summary" class="panel">
+
     <h2>About Me</h2>
- 
+
     <p>
         Hello! My name is Connor Hansen. I am a student who enjoys learning new things,
         working on myself, and improving my skills in computer science as a whole.
 </p>
- 
+
     <p>
         I am interested in videogames, learning more about people, and learning.
         My goal is to continue learning and prepare myself for a successful career.
 </p>
  
-    <hr>
- 
     <h2>Personal Information</h2>
- 
+
     <p><strong>Name:</strong> Connor Hansen</p>
-<p><strong>Grade:</strong> Sophmore year</p>
-<p><strong>School:</strong> Northern Arizona University</p>
-<p><strong>Location:</strong> Arizona, USA</p>
- 
-    <hr>
- 
+    <p><strong>Grade:</strong> Sophmore year</p>
+    <p><strong>School:</strong> Northern Arizona University</p>
+    <p><strong>Location:</strong> Arizona, USA</p>
+
+    </section>
+
+    <section id="education" class="panel">
     <h2>Education</h2>
- 
-    <h3>Northern Arizona University</h3>
- 
-    <p>Expected Graduation: May 2029</p>
+
+    <table class="info-table">
+      <thead>
+        <tr>
+          <th>Institution</th>
+          <th>Focus</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Northern Arizona University</td>
+          <td>Mathematics, Science, Computer Science</td>
+          <td>Expected Graduation: May 2029</td>
+          </tr>
+          </tbody>
+          </table>
+          </section>
  
     <p>
         I am currently studying subjects including Mathematics,
@@ -46,107 +75,95 @@
  
     <hr>
  
+  <section id="skills" class="panel">
     <h2>My Skills</h2>
+
+      <div class="skills-flex">
+      <span class="skill-pill">Communication</span>
+      <span class="skill-pill">Teamwork</span>
+      <span class="skill-pill">Problem Solving</span>
+      <span class="skill-pill">Organizing</span>
+      <span class="skill-pill">Basic Computer Skills</span>
+      <span class="skill-pill">Microsoft Word</span>
+      <span class="skill-pill">Microsoft PowerPoint</span>
+      <span class="skill-pill">HTML</span>
+     </div>
+     </section>
  
-    <ul>
-<li>Communication</li>
-<li>Teamwork</li>
-<li>Problem Solving</li>
-<li>Organizing</li>
-<li>Basic Computer Skills</li>
-<li>Microsoft Word</li>
-<li>Microsoft PowerPoint</li>
-<li>HTML</li>
-</ul>
- 
-    <hr>
- 
+    <section id="projects" class="panel">
     <h2>My Projects</h2>
- 
+
+    <div class="projects-grid">
+
+    <article class="project-card">
     <h3>Project 1: Simple Calculator</h3>
- 
     <p>
         I created a simple calculator that could do addition, subtraction, multiplication, and division all in python.
+     </p>
      <img src="https://mail.google.com/mail/u/0?ui=2&ik=e28c8e3df0&attid=0.1&permmsgid=msg-f:1875744735929869307&th=1a07fbe63268a3fb&view=att&disp=safe&realattid=1a07fbb62a41ab75331&zw" alt="Code" width="200">
      <img src="https://mail.google.com/mail/u/0?ui=2&ik=e28c8e3df0&attid=0.2&permmsgid=msg-f:1875744735929869307&th=1a07fbe63268a3fb&view=att&disp=safe&realattid=1a07fbb62a492f8d2d83&zw" alt="Code output" width="200">
-</p>
+     </article>
  
-    <h3>Project 2: random number game</h3>
- 
-    <p>
+     <article class="project-card">
+     <h3>Project 2: random number game</h3>
+     <p>
         I built a game in python that generates a random number and when you guess it'll tell you higher or lower until you get it right.
+     </p>
      <img src="https://mail.google.com/mail/u/0?ui=2&ik=e28c8e3df0&attid=0.3&permmsgid=msg-f:1875744735929869307&th=1a07fbe63268a3fb&view=att&disp=safe&realattid=1a07fbb62a490fd84b44&zw" alt="Code" width="200">
      <img src="https://mail.google.com/mail/u/0?ui=2&ik=e28c8e3df0&attid=0.4&permmsgid=msg-f:1875744735929869307&th=1a07fbe63268a3fb&view=att&disp=safe&realattid=1a07fbb62a45955d0452&zw" alt="Code output" width="200">
-</p>
+     </article>
  
-    <h3>Project 3: Group short film</h3>
- 
-    <p>
+     <article class="project-card">
+     <h3>Project 3: Group short film</h3>
+     <p>
         I worked with a group and we made a short film completley edited.
+     </p>
      <img src="https://mail.google.com/mail/u/0?ui=2&ik=e28c8e3df0&attid=0.5&permmsgid=msg-f:1875744735929869307&th=1a07fbe63268a3fb&view=att&disp=safe&realattid=1a07fbb62a45f64cbaf6&zw" alt="Group I worked with" width="200">
      <img src="https://mail.google.com/mail/u/0?ui=2&ik=e28c8e3df0&attid=0.6&permmsgid=msg-f:1875744735929869307&th=1a07fbe63268a3fb&view=att&disp=safe&realattid=1a07fbb62a466382e2b5&zw" alt="Place we got" width="200">
-</p>
+     </article>
+
+     </div>
+     </section>
  
-    <hr>
- 
+    <section id="more" class="panel">
     <h2>Achievements</h2>
- 
     <ol>
-<li>Graduated highschool with over a 4.0 GPA</li>
-<li>Competed in an Arizona film competition</li>
-<li>Became a Community Assistant for NAU</li>
-</ol>
- 
-    <hr>
- 
+      <li>Graduated highschool with over a 4.0 GPA</li>
+      <li>Competed in an Arizona film competition</li>
+      <li>Became a Community Assistant for NAU</li>
+    </ol>
+
     <h2>My Interests</h2>
- 
     <ul>
-<li>Technology</li>
-<li>Editing</li>
-<li>Filming</li>
-<li>Music</li>
-<li>Gaming</li>
-<li>Spending time with my partner</li>
-</ul>
- 
-    <hr>
- 
+      <li>Technology</li>
+      <li>Editing</li>
+      <li>Filming</li>
+      <li>Music</li>
+      <li>Gaming</li>
+      <li>Spending time with my partner</li>
+    </ul>
+
     <h2>My Goals</h2>
- 
     <p>
         My short-term goal is to improve my knowledge on coding along with programming so I am more well versed on my field.
-</p>
- 
+    </p>
     <p>
         My long-term goal is to graduate from college, find a succeful job in order to live with a family that I want to build.
-</p>
- 
-    <hr>
- 
-    <h2>Contact Me</h2>
- 
-    <p>Email: crh664@nau.edu</p>
- 
-    <p>
-        LinkedIn:
-<a href="https://www.linkedin.com/in/connor-hansen-b28bba322/">My LinkedIn Profile</a>
-</p>
- 
-    <p>
-        GitHub:
-<a href="https://github.com/crh664-source">My GitHub Profile</a>
-</p>
+    </p>
+    </section>
 
- <hr>
- <h2>Resume</h2>
-<p>
- <a href="https://docs.google.com/document/d/1pneWWlOjez3QlMS4Km4ndB7Rn-Z2_in6vsCKbBBqWdU/edit?tab=t.0" >My Resume</a>
-    <hr>
- 
-    <footer>
-<p>&copy; 2026 Connor Hansen - Student Portfolio</p>
-</footer>
- 
+  </main>
+
+  <footer class="site-footer" id="contact">
+  <div class="contact-wrap">
+    <h2>Contact Information</h2>
+    <p class="contact-email">Email: crh664@nau.edu</p>
+    <p class="contact-link"><a href="https://www.linkedin.com/in/connor-hansen-b28bba322/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p class="contact-link"><a href="https://github.com/crh664-source" target="_blank" rel="noopener">GitHub</a></p>
+    <p class="copyright">&copy; 2026 Connor Hansen - Student Portfolio</p>
+  </div>
+  </footer>
+
+</div>
 </body>
 </html>
