@@ -72,3 +72,24 @@ body {
   border-radius: 4px;
   font-weight: bold;
 }
+.skills-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-pill {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ecf0f1;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-pill:hover {
+  transform: scale(1.1);
+  background-color: #3498db;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
